@@ -1,0 +1,26 @@
+-- Crear la base de datos llamada 'calculadora'
+CREATE DATABASE IF NOT EXISTS calculadora;
+
+-- Usar la base de datos recién creada
+USE calculadora;
+
+-- Crear la tabla con las columnas para los hashes, el id, y la cadena original
+CREATE TABLE IF NOT EXISTS hashes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cadena VARCHAR(255) NOT NULL,
+    md5 VARCHAR(32),
+    sha1 VARCHAR(40),
+    sha224 VARCHAR(56),
+    sha256 VARCHAR(64),
+    sha384 VARCHAR(96),
+    sha512 VARCHAR(128),
+    sha3_224 VARCHAR(56),
+    sha3_256 VARCHAR(64),
+    sha3_384 VARCHAR(96),
+    sha3_512 VARCHAR(128),
+    ripemd160 VARCHAR(40),
+    blake2_256 VARCHAR(64),
+    blake2_512 VARCHAR(128),
+    whirlpool VARCHAR(128)
+);
+

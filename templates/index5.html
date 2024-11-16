@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/psone.css/dist/psone.min.css">
+    <title>Tipos De Hash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <u>Tipos De Hash</u>
+            </h1>
+        </div>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="index.html">Regresar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <main id="Primero1">
+        <div id="primer">
+            <h2>MD5 (Message Digest 5)</h2>
+            <p>Es una función criptográfica hash desarrollada en 1991 por Ronald Rivest, uno de los creadores del algoritmo de cifrado RSA. Su propósito original era asegurar la integridad de los datos, generando un valor de longitud fija (128 bits) a partir de una entrada de cualquier longitud.</p>
+            <p>MD5 se diseñó para producir un resumen o "huella digital" único para cada conjunto de datos. Sin embargo, con el tiempo, se descubrieron vulnerabilidades criptográficas que hacían posible la creación de colisiones (cuando dos entradas diferentes generan el mismo hash), comprometiendo su seguridad.</p>
+            <ul>
+                <li>Año de creación: 1991</li>
+                <li>Creador: Ronald Rivest</li>
+                <li>Uso: Generar un valor hash para verificar la integridad de los datos</li>
+                <li>Vulnerabilidades: Colisiones que hacen que ya no se recomiende para usos criptográficos importantes.</li>
+            </ul>
+            <br>
+            <img src="img_webp/ejemplo1.webp" alt="">
+        </div>
+    </main>
+    <br>
+    <br>
+    <main id="Segundo2">
+        <div id="segun">
+            <h2>SHA-1 (Secure Hash Algorithm 1)</h2>
+            <p>Es una función criptográfica hash diseñada para producir un resumen de mensaje de 160 bits a partir de una entrada de cualquier tamaño. Fue desarrollado por la Agencia de Seguridad Nacional de los Estados Unidos (NSA) y publicado por el Instituto Nacional de Estándares y Tecnología (NIST) en 1993 como parte del Digital Signature Algorithm (DSA).</p>
+            <p>SHA-1 se utilizó ampliamente para verificar la integridad de archivos y para la firma digital. Sin embargo, con el avance de la criptografía y la informática, se descubrieron debilidades importantes que permitían la creación de colisiones, lo que comprometía su seguridad. Estas vulnerabilidades fueron confirmadas en 2005, y en 2017 Google logró crear la primera colisión práctica.</p>
+            <ul>
+                <li>Año de creación: 1993</li>
+                <li>Creador: NSA (Agencia de Seguridad Nacional de EE.UU.), publicado por NIST</li>
+                <li>Uso: Función hash criptográfica para verificación de integridad y firmas digitales</li>
+                <li>Vulnerabilidades: Colisiones que hacen inseguro su uso en la actualidad para aplicaciones criptográficas.</li>
+            </ul>
+           <img src="img_webp/ejemplo2.webp" alt="">
+        </div>
+    </main>
+    <br>
+    <br>
+    <main id="Tercero3">
+        <div id="tercer">
+            <h2>SHA-3 (Secure Hash Algorithm 3)</h2>
+            <p>Es una familia de funciones hash criptográficas que fue seleccionada como el estándar SHA-3 por el Instituto Nacional de Estándares y Tecnología (NIST) en 2015. A diferencia de sus predecesores (SHA-1 y SHA-2), SHA-3 se basa en una estructura completamente diferente llamada Keccak, que fue desarrollada por un equipo de criptógrafos: Guido Bertoni, Joan Daemen, Michaël Peeters y Gilles Van Assche.</p>
+            <p>Keccak fue el algoritmo ganador de la competencia organizada por NIST entre 2007 y 2012 para encontrar un nuevo estándar de hash seguro, como medida preventiva ante posibles vulnerabilidades futuras en SHA-2. A diferencia de los métodos de hash tradicionales basados en iteraciones lineales, SHA-3 utiliza un enfoque conocido como estructura esponja, que es muy flexible y robusta frente a ataques como las colisiones y preimágenes.</p>
+            <ul>
+                <li>Año de creación: Seleccionado en 2015, tras el concurso de NIST (2007-2012)</li>
+                <li>Creadores: Guido Bertoni, Joan Daemen, Michaël Peeters y Gilles Van Assche</li>
+                <li>Estructura: Basado en el algoritmo Keccak y la estructura esponja</li>
+                <li>Ventajas: Resistente a los ataques conocidos que afectan a SHA-1 y SHA-2, y ofrece una estructura innovadora para mayor seguridad.</li>
+            </ul>
+            <img src="img_webp/ejemplo3.webp" alt="">
+        </div>
+    </main>
+    <br>
+    <br>
+    <main id="Cuarto4">
+        <div id="cuatro">
+            <h2>RIPEMD (RACE Integrity Primitives Evaluation Message Digest)</h2>
+            <p>Es una familia de funciones hash criptográficas diseñada como una alternativa a los algoritmos MD4 y MD5. Fue desarrollada en 1996 por un grupo de criptógrafos europeos liderado por Hans Dobbertin, Antoon Bosselaers y Bart Preneel como parte del proyecto RIPE (RACE Integrity Primitives Evaluation), un esfuerzo de investigación financiado por la Unión Europea.</p>
+            <p>El algoritmo más utilizado de esta familia es RIPEMD-160, que genera un hash de 160 bits (similar en tamaño al SHA-1). RIPEMD fue diseñado para ser resistente a colisiones y otras formas de ataques, y aunque no ha sido tan popular como SHA-1 o SHA-2, se considera seguro para la mayoría de las aplicaciones criptográficas actuales.</p>
+            <p>Existen otras variantes de RIPEMD con tamaños de hash diferentes, como RIPEMD-128, RIPEMD-256, y RIPEMD-320, pero RIPEMD-160 es la más conocida y usada debido a su equilibrio entre seguridad y eficiencia.</p>
+            <ul>
+                <li>Año de creación: 1996</li>
+                <li>Creadores: Hans Dobbertin, Antoon Bosselaers, Bart Preneel</li>
+                <li>Uso: Función hash criptográfica para verificar la integridad de los datos</li>
+                <li>Variantes: RIPEMD-160 (la más utilizada), RIPEMD-128, RIPEMD-256, RIPEMD-320</li>
+            </ul>
+            <img src="img_webp/ejemplo4.webp" alt="">
+        </div>
+    </main>
+    <br>
+    <br>
+    <main id="Quinto5">
+        <div id="quinto">
+            <h2>Whirlpool</h2>
+            <p>Es una función hash criptográfica diseñada para generar un resumen de 512 bits a partir de una entrada de cualquier longitud. Es conocida por su gran tamaño de hash en comparación con otros algoritmos comunes como SHA-1 (160 bits) o MD5 (128 bits). Whirlpool fue creado en el año 2000 por los criptógrafos Vincent Rijmen (uno de los diseñadores del algoritmo de cifrado AES) y Paulo Barreto.</p>
+            <p>Whirlpool se basa en la estructura de un cifrado en bloque modificado conocido como AES (Advanced Encryption Standard), pero utiliza una variante de este algoritmo, lo que lo hace especialmente robusto contra ataques de colisiones, preimágenes y ataques de segunda preimagen. Aunque Whirlpool no es tan ampliamente usado como otros algoritmos de hash como SHA-2, se considera seguro y ha sido estandarizado por la Organización Internacional de Normalización (ISO).</p>
+            <ul>
+                <li>Año de creación: 2000</li>
+                <li>Creadores: Vincent Rijmen y Paulo Barreto</li>
+                <li>Uso: Función hash criptográfica utilizada para garantizar la integridad y seguridad de los datos</li>
+                <li>Estructura: Basada en una variante del cifrado AES</li>
+            </ul>
+            <img src="img_webp/ejemplo5.webp" alt="">
+        </div>
+    </main>
+    <br>
+    <br>
+    <main id="Sexto6">
+        <div id="seis">
+            <h2>SHA-2 (Secure Hash Algorithm 2)</h2>
+            <p>Es una familia de funciones hash criptográficas diseñada por la Agencia de Seguridad Nacional de los Estados Unidos (NSA) y publicada por el Instituto Nacional de Estándares y Tecnología (NIST) en 2001 como sucesora de SHA-1. SHA-2 incluye varias funciones hash con diferentes tamaños de salida, como SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224 y SHA-512/256.</p>
+            <p>El más comúnmente utilizado de esta familia es SHA-256, que genera un valor hash de 256 bits. Las funciones hash de SHA-2 están diseñadas para ser mucho más resistentes a colisiones y preimágenes que SHA-1 y MD5. Se usan ampliamente en criptografía moderna, como en protocolos de seguridad de Internet (TLS, SSL), blockchain (como en Bitcoin), y para firmar digitalmente datos y software.</p>
+            <ul>
+                <li>Año de creación: 2001</li>
+                <li>Creador: NSA (Agencia de Seguridad Nacional de EE.UU.), publicado por NIST</li>
+                <li>Tamaño del hash: Variantes de 224, 256, 384 y 512 bits</li>
+                <li>Ventajas: Mayor seguridad contra ataques criptográficos, recomendado para aplicaciones que requieren alta seguridad</li>
+            </ul>
+            <img src="img_webp/ejemplo6.webp" alt="">
+        </div>
+    </main>
+    <br>
+    <br>
+    <main id="Septimo7">
+        <div id="siete">
+            <h2>BLAKE2</h2>
+            <p>Es una función hash criptográfica diseñada para ser rápida, segura y eficiente, mejorando tanto en rendimiento como en seguridad en comparación con otros algoritmos hash populares como MD5, SHA-1 y SHA-2. Fue creada en 2012 por un equipo de criptógrafos compuesto por Jean-Philippe Aumasson, Samuel Neves, Zooko Wilcox-O'Hearn y Christian Winnerlein.</p>
+            <p>BLAKE2 se basa en el algoritmo BLAKE, que fue finalista de la competencia organizada por NIST para el estándar SHA-3, pero con optimizaciones que lo hacen más rápido en software que muchos otros algoritmos hash. Tiene variantes como BLAKE2b (orientado a arquitecturas de 64 bits) y BLAKE2s (orientado a arquitecturas de 32 bits).</p>
+            <p>BLAKE2 también es flexible, ya que soporta el hashing de claves, sal, y personalización, lo que lo hace útil en aplicaciones como la verificación de integridad de datos, firmas digitales y criptografía de contraseñas.</p>
+            <ul>
+                <li>Año de creación: 2012</li>
+                <li>Creadores: Jean-Philippe Aumasson, Samuel Neves, Zooko Wilcox-O'Hearn, Christian Winnerlein</li>
+                <li>Tamaño del hash: Soporta varios tamaños, con BLAKE2b generando hasta 512 bits y BLAKE2s hasta 256 bits.</li>
+                <li>Ventajas: Más rápido y seguro que SHA-2 y SHA-3, soporta opciones avanzadas como sal y personalización.</li>
+            </ul>
+            <img src="img_webp/ejemplo7.webp" alt="">
+        </div>
+    </main>
+    <br>
+    <br>
+    <main id="Octavo8">
+        <div id="ocho">
+            <h2>BLAKE3</h2>
+            <p>Es una función hash criptográfica diseñada para ser extremadamente rápida, eficiente y segura, basada en las fortalezas de BLAKE2 y otras técnicas criptográficas modernas. Fue creada en 2020 por los criptógrafos Jack O'Connor, Jean-Philippe Aumasson, Samuel Neves, y Zooko Wilcox-O'Hearn.</p>
+            <p>BLAKE3 está diseñada para ofrecer un rendimiento significativamente superior al de sus predecesores (BLAKE2 y SHA-2), siendo capaz de aprovechar completamente las capacidades de múltiples núcleos y procesadores paralelos. Esto la hace extremadamente rápida en hardware moderno, manteniendo al mismo tiempo un alto nivel de seguridad criptográfica.</p>
+            <ul>
+                <li>Año de creación: 2020</li>
+                <li>Creadores: Jack O'Connor, Jean-Philippe Aumasson, Samuel Neves, Zooko Wilcox-O'Hearn</li>
+                <li>Tamaño del hash: 256 bits</li>
+                <li>Ventajas: Mucho más rápido que SHA-2, SHA-3 y BLAKE2, paralelizable, ideal para grandes volúmenes de datos y sistemas multinúcleo</li>
+            </ul>
+            <img src="img_webp/ejemplo8.webp" alt="">
+        </div>
+    </main>
+    <br>
+    <br>
+    <main id="Noveno9">
+        <div id="nueve">
+            <h2>Tiger</h2>
+            <p>Es una función hash criptográfica diseñada para ser rápida y eficiente en arquitecturas de 64 bits, utilizada principalmente para la integridad de datos y firmas digitales. Fue creada en 1995 por los criptógrafos Ross Anderson y Eli Biham. Su objetivo principal era ofrecer un algoritmo que fuera rápido en hardware de 64 bits, algo que era menos común en otras funciones hash de la época, como MD5 o SHA-1, que estaban optimizadas para arquitecturas de 32 bits.</p>
+            <p>Tiger genera un hash de 192 bits y también tiene versiones que permiten generar hashes de 128 y 160 bits, aunque la versión estándar sigue siendo la de 192 bits. La función es conocida por ser muy eficiente en sistemas de alto rendimiento y con procesamiento de grandes volúmenes de datos.</p>
+            <ul>
+                <li>Año de creación: 1995</li>
+                <li>Creadores: Ross Anderson y Eli Biham</li>
+                <li>Tamaño del hash: 192 bits (con variantes de 128 y 160 bits)</li>
+                <li>Ventajas: Alta velocidad en sistemas de 64 bits, eficiente para grandes volúmenes de datos</li>
+            </ul>
+            <img src="img_webp/ejemplo9.webp" alt="">
+        </div>
+    </main>
+    <br>
+    <br>
+    <main id="Diez10">
+        <div id="dies">
+            <h2>Argon2</h2>
+            <p>Es una función de derivación de claves diseñada específicamente para la seguridad de contraseñas, enfocada en ser resistente a ataques de fuerza bruta y ataques con hardware especializado como los ASICs (circuitos integrados de aplicación específica) y GPUs. Fue creada en 2015 por un equipo de criptógrafos liderado por Alex Biryukov, Daniel Dinu, y Dmitry Khovratovich. Argon2 ganó la Password Hashing Competition (PHC) en 2015, destacándose por su seguridad y eficiencia.</p>
+            <ul>
+                <li>Argon2d: Optimizado para resistencia frente a ataques de tiempo, favorece la seguridad contra ataques basados en el uso intensivo de memoria.</li>
+                <li>Argon2i: Diseñado para ser más seguro contra ataques de canal lateral, realizando accesos a la memoria de manera más distribuida.</li>
+                <li>Argon2id: Una combinación de los dos anteriores, ofreciendo una mezcla equilibrada de seguridad y rendimiento.</li>
+            </ul>
+            <ul>
+                <li>Año de creación: 2015</li>
+                <li>Creadores: Alex Biryukov, Daniel Dinu, Dmitry Khovratovich</li>
+                <li>Ventajas: Resistente a ataques con GPUs y ASICs, altamente configurable en términos de memoria y tiempo, ideal para la seguridad de contraseñas</li>
+                <li>Uso: Derivación de claves para el almacenamiento seguro de contraseñas, protección contra ataques de fuerza bruta y hardware especializado</li>
+            </ul>
+            <img src="img_webp/ejemplo10.webp" alt="">
+        </div>
+    </main> 
+    <br>
+    <br>
+    <main>
+        <footer id="pie">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Acerca de</h3>
+                            <p>El Rincon Del HASH,  ofrecemos recursos educativos de calidad para estudiantes de todas las edades. Nuestro objetivo es hacer que el aprendizaje sea accesible y dinámico, brindando lecciones interactivas.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Enlaces útiles</h3>
+                            <ul>
+                                <li><a href="#">Política de privacidad</a></li>
+                                <li><a href="#">Términos de servicio</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Síguenos</h3>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Kevin Ariam Muñiz Leyva. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </main> 
+</body>
+</html>

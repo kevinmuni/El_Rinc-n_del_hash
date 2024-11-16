@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/psone.css/dist/psone.min.css"> <!--framework de psone-->
+    <title>Rincon_del_hash</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <u>HASH</u>
+            </h1>
+        </div>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="#primer">Introducción</a></li>
+                    <li><a href="#segundo">Caracteristicas</a></li>
+                    <li><a href="#tercero">Aplicaciones del Hash</a></li>
+                    <li><a href="#cuartote">Algoritmos de Hash más comunes</a></li>
+                    <li><a href="index.html">Regresar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="primero">
+        <div id="Primer">
+            <h2>¿Que es un hash?</h2>
+            <p>
+                Un <a href="" style="color: yellow;" title="Presioname">hash</a> es como una "huella digital" única de un dato. Imagina que tienes un texto, un archivo o cualquier tipo de información. Cuando aplicas una función de hash, esa información se convierte en una cadena de caracteres (un código) que es única para ese dato específico. Incluso si cambias una pequeña parte del dato original, el hash resultante será completamente diferente.
+    
+    Los hashes se usan principalmente para asegurar que la información no ha sido alterada. Por ejemplo, si descargas un archivo y quieres estar seguro de que no ha sido modificado, puedes comparar su hash con el hash original. Si coinciden, sabes que el archivo es auténtico.
+            </p>
+        </div>
+    </main>
+    <br>
+    <main id="segundo">
+        <div id="Segundo">
+            <h2>Características de un Hash</h2>
+            <ul>
+                <li>Longitud fija: No importa la longitud de los datos de entrada; el resultado del <a href="" style="color: yellow;" title="Presioname">hash</a> siempre tendrá una longitud fija, que depende de la función hash utilizada. Por ejemplo, el algoritmo SHA-256 genera un hash de 256 bits (64 caracteres hexadecimales).</li>
+                <li>Determinístico: Para cualquier entrada dada, el valor del hash será siempre el mismo. Si el contenido de los datos de entrada cambia, incluso en una sola letra, el valor del hash resultante será completamente diferente.</li>
+                <li>Irreversibilidad: Una función hash está diseñada para ser unidireccional, lo que significa que no se puede reconstruir el mensaje original a partir del hash. Esto lo hace útil para el almacenamiento de contraseñas y la verificación de integridad de los datos.</li>
+                <li>Rápido cálculo: Las funciones hash están optimizadas para calcularse rápidamente, lo que es esencial cuando se manejan grandes volúmenes de datos.</li>
+                <img id="imagen1" src="img_webp/esquema-de-la-funcion-hash-removebg-preview-removebg-preview.webp" alt="">
+                <br>
+                
+            </ul>
+    
+        </div>
+    </main>
+    <br>
+    <main id="tercero">
+        <div id="Tercer">
+            <h2>Aplicaciones del Hash</h2>
+            <ol>
+                <li>Seguridad</li>
+                <ul>
+                    <li>Almacenamiento de contraseñas: En lugar de almacenar contraseñas en texto plano, se almacenan los hashes de estas contraseñas. Al momento de autenticar, se compara el hash de la contraseña proporcionada con el hash almacenado.
+                    </li>
+                    <li>Firmas digitales: Los hashes se utilizan para crear firmas digitales en documentos o transacciones electrónicas, verificando la integridad de los datos.</li>
+                </ul>
+                <li>Verificación de integridad</li>
+                <ul>
+                    <li>Los hashes se emplean para asegurarse de que los archivos no se han modificado. Si el hash de un archivo recibido es igual al hash original conocido, se puede garantizar que el archivo no ha sido alterado.
+                    </li>
+                </ul>
+                <li>Almacenamiento de datos</li>
+                <ul>
+                    <li>En tablas hash, los valores hash se utilizan para indexar datos en bases de datos y sistemas de almacenamiento, facilitando búsquedas rápidas.</li>
+    
+                </ul>
+                <li>Criptomonedas</li>
+                <ul>
+                    <li>Las criptomonedas como Bitcoin dependen del uso intensivo de funciones hash en su proceso de minería, donde los mineros resuelven problemas criptográficos relacionados con la creación de bloques en la cadena de bloques.
+                    </li>
+                </ul>
+            </ol>
+            <img id="imagen2" src="img_webp/HASH1-removebg-preview.webp" alt="">
+            <br>
+        </div>
+        <br>
+        <br>
+    </main>
+    <br>
+    <main id="cuartote">
+        <div id="Cuarto">
+            <h2>Algoritmos de Hash más comunes</h2>
+            <ul>
+                <li>MD5 (Message Digest Algorithm 5): Genera un hash de 128 bits, aunque es considerado inseguro debido a la posibilidad de colisiones.
+                </li>
+                <li>SHA-1 (Secure Hash Algorithm 1): Produce un hash de 160 bits. Aunque fue muy popular, también ha sido considerado vulnerable a ataques.
+                </li>
+                <li>SHA-256: Parte de la familia SHA-2, es una de las funciones hash más seguras y comúnmente utilizadas en la actualidad.
+                </li>
+                <li>SHA-3: Un estándar más reciente que ofrece mayor seguridad en algunos contextos.
+                </li>
+    
+            </ul>
+        </div>
+    </main>
+    <br>
+    <main id="quinto">
+        <div id="Quintote">
+            <h2>Tipos De Hash</h2>
+            <ol>
+                <li>MD5 (Message Digest Algorithm 5): Genera un hash de 128 bits, aunque es considerado inseguro debido a la posibilidad de colisiones.
+                </li>
+                <li>SHA-1 (Secure Hash Algorithm 1): Produce un hash de 160 bits. Aunque fue muy popular, también ha sido considerado vulnerable a ataques.
+                </li>
+                <li>SHA-256: Parte de la familia SHA-2, es una de las funciones hash más seguras y comúnmente utilizadas en la actualidad.
+                </li>
+                <li>SHA-3: Un estándar más reciente que ofrece mayor seguridad en algunos contextos.
+                </li>
+                <li>RIPEMD (RACE Integrity Primitives Evaluation Message Digest) 160 bits (la versión más común).Alternativa a SHA y MD5, creada en Europa. No es tan popular como SHA-2, pero sigue siendo segura.
+                </li>
+                <li>Whirlpool 512 bits Algoritmo de hash basado en una versión modificada del cifrado AES. Se considera seguro y tiene una longitud de salida bastante larga.</li>
+                <li>BLAKE2 configurable a 512 bits Más rápido que MD5 y SHA-2 y considerado más seguro. Tiene dos variantes principales: BLAKE2b (para 64 bits) y BLAKE2s (para 32 bits).</li>
+                <li>BLAKE3 256 bits Más rápido que BLAKE2 y con mejor rendimiento en arquitecturas modernas. Se destaca por su alta velocidad y capacidad de paralelización.</li>
+                <li>Tiger 192 bits  Es utilizado principalmente en sistemas de 64 bits y se considera rápido en estos entornos. Menos común en la actualidad.</li>
+                <li>Argon2 configurable, Específicamente diseñado como un hash para contraseñas. Ganador de la Competición de Hashing de Contraseñas en 2015. Tiene variantes como Argon2d, Argon2i, y Argon2id.</li>
+                <img src="img_webp/tipos.webp" alt="">
+            </ol>
+        </div>
+    </main>
+    <main>
+        <footer id="pie">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Acerca de</h3>
+                            <p>El Rincon Del HASH,  ofrecemos recursos educativos de calidad para estudiantes de todas las edades. Nuestro objetivo es hacer que el aprendizaje sea accesible y dinámico, brindando lecciones interactivas.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Enlaces útiles</h3>
+                            <ul>
+                                <li><a href="#">Política de privacidad</a></li>
+                                <li><a href="#">Términos de servicio</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Síguenos</h3>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Kevin Ariam Muñiz Leyva. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón Del HASH</title>
+    <link rel="stylesheet" href="https://unpkg.com/psone.css/dist/psone.min.css"> <!--framework de psone-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script>
+        function trans() {
+            console.log("hola mundo ");
+            
+            // Seleccionar el tipo de hash
+            let seleccion = document.getElementById('hashType');
+            let valor = seleccion.value;
+            console.log(valor);
+    
+            // Seleccionar el campo de texto
+            let campo = document.getElementById("campo").value;
+            
+            // Verificar si el campo de texto está vacío
+            if (campo === "") {
+                alert("Campo vacío");
+                return; // Salir de la función si el campo está vacío
+            }
+    
+            let textoTrans = ""; // Variable para almacenar el hash resultante
+            
+            // Generar el hash en función del tipo seleccionado
+            switch (valor) {
+                case "md5":
+                    textoTrans = CryptoJS.MD5(campo).toString(CryptoJS.enc.Hex);
+                    console.log("MD5:", textoTrans);
+                    break;
+                case "sha1":
+                    textoTrans = CryptoJS.SHA1(campo).toString(CryptoJS.enc.Hex);
+                    console.log("SHA-1:", textoTrans);
+                    break;
+                case "sha256":
+                    textoTrans = CryptoJS.SHA256(campo).toString(CryptoJS.enc.Hex);
+                    console.log("SHA-256:", textoTrans);
+                    break;
+                case "sha512":
+                    textoTrans = CryptoJS.SHA512(campo).toString(CryptoJS.enc.Hex);
+                    console.log("SHA-512:", textoTrans);
+                    break;
+                default:
+                    alert("Algoritmo no soportado");
+                    return;
+            }
+    
+            // Asignar valores a los <span> correspondientes
+            document.getElementById("hashResultado").textContent = "Hash Resultante: " + textoTrans;
+            document.getElementById("tipoHashSeleccionado").textContent = "Tipo de Hash: " + valor.toUpperCase();
+            document.getElementById("cadenaOriginal").textContent = "Cadena Original: " + campo;
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <u>El Rincón Del HASH</u>
+            </h1>
+        </div>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#calculadora">Calculadora HASH</a></li>
+                    <li><a href="#historia">Historia Del HASH</a></li>
+                    <li><a href="#base-datos">Base de Datos</a></li>
+                    <li><a href="index5.html">Tipos De Hash</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="introduccion">
+        <div>
+            <h2>
+                <u>Bienvenidos a El Rincón del HASH - tu portal educativo sobre la criptografía y los algoritmos de hash.</u>
+            </h2>
+            <p>En esta página encontrarás recursos y herramientas que te ayudarán a entender qué son los hashes, cómo se utilizan en la seguridad digital, y por qué son esenciales en el mundo de la informática. Desde una calculadora de hashes interactiva hasta la historia detrás de estos algoritmos, nuestro objetivo es hacer que el aprendizaje sobre el hashing sea accesible y comprensible para todos.</p>
+
+            <h3>¿Qué es un Hash?</h3>
+            <p>Un <a href="" style="color: yellow;" title="Presioname">hash</a> es como una "huella digital" única de un dato. Imagina que tienes un texto, un archivo o cualquier tipo de información. Cuando aplicas una función de hash, esa información se convierte en una cadena de caracteres (un código) que es única para ese dato específico. Incluso si cambias una pequeña parte del dato original, el hash resultante será completamente diferente.</p>
+            <p>Los hashes se usan principalmente para asegurar que la información no ha sido alterada. Por ejemplo, si descargas un archivo y quieres estar seguro de que no ha sido modificado, puedes comparar su hash con el hash original. Si coinciden, sabes que el archivo es auténtico. <a href="index3.html" style="color : red">(Leer mas)</a></p>
+        </div>
+    </main>
+    <main id="historia">
+        <div>
+            <h2><u><strong>Historia y Usos del HASH</strong></u></h2>
+            <h2>Orígenes del Hash</h2>
+            <p>El concepto de <a href="" style="color: yellow;" title="Presioname">hash</a> data de la década de 1950, cuando se desarrollaron los primeros algoritmos de hash para resolver problemas de almacenamiento y recuperación de datos en las primeras computadoras.<a href="index4.html" style="color : red">(Leer mas)</a></p>
+            <h2>Hash en Criptografía</h2>
+            <p>Con el tiempo, los algoritmos de <a href="" style="color: yellow;" title="Presioname">hash</a> se convirtieron en una pieza fundamental en la criptografía moderna. En los años 70 y 80, con la aparición de estándares como SHA (Secure Hash Algorithm), el hash comenzó a utilizarse para garantizar la integridad y seguridad de la información.</p>
+            <h2>Evolución y Estándares</h2>
+            <p>En las últimas décadas, los algoritmos de <a href="" style="color: yellow;" title="Presioname">hash</a> han evolucionado para resistir ataques cada vez más sofisticados. Esto ha llevado al desarrollo de nuevos estándares y la obsolescencia de algunos más antiguos, como MD5, que hoy se considera inseguro.</p>
+            <h2>Aplicaciones Actuales</h2>
+            <p>Hoy en día, los algoritmos de <a href="" style="color: yellow;" title="Presioname">hash</a> se utilizan en una variedad de aplicaciones, desde la verificación de la integridad de archivos hasta la seguridad en blockchain y firmas digitales.</p>
+        </div>
+    </main>
+    <main id="calculadora">
+        <div>
+            <h2>Calculadora</h2>
+            <p>En esta sección podrás calcular cualquier cadena de texto y transformarla en una cadena <a href="" style="color: yellow;" title="Presioname">hash</a>.</p>
+            <label for="hashType">Tipo de Hash</label>
+            <select id="hashType" name="hashType">
+                <option value="md5">MD5</option>
+                <option value="sha1">SHA-1</option>
+                <option value="sha224">SHA-224</option>
+                <option value="sha256">SHA-256</option>
+                <option value="sha384">SHA-384</option>
+                <option value="sha512">SHA-512</option>
+                <option value="sha3_224">SHA3-224</option>
+                <option value="sha3_256">SHA3-256</option>
+                <option value="sha3_384">SHA3-384</option>
+                <option value="sha3_512">SHA3-512</option>
+                <option value="ripemd160">RIPEMD-160</option>
+                <option value="blake2_256">BLAKE2-256</option>
+                <option value="blake2_512">BLAKE2-512</option>
+                <option value="whirlpool">Whirlpool</option>
+            </select>
+            <br>
+            <label for="campo">Cadena:</label>
+            <input type="text" id="campo">
+            <br>
+            <button id="boton" onclick="trans()">Convertir</button>
+            <br><br>
+            
+            <!-- Spans con estilo PS1 para mostrar resultados -->
+            <div>
+                <span id="hashResultado" style="font-size: 1.5em;"></span> <!-- Para mostrar el hash generado -->
+                <br>
+                <span id="tipoHashSeleccionado"  style="font-size: 1.5em;"></span> <!-- Para mostrar el tipo de hash seleccionado -->
+                <br>
+                <span id="cadenaOriginal"  style="font-size: 1.5em;"></span> <!-- Para mostrar la cadena original -->
+            </div>
+        </div>
+    </main>
+    
+    <main id="base-datos">
+        <div>
+            <h2>Descarga nuestra Base de Datos</h2>
+            <p style="text-align: center;">En Este apartado Podras Descargar un .txt Con nuestra Base de Datos de Hash</p>
+            <br>
+            <button id="Descargar">Descargar</button>
+        </div>
+    </main>
+    <main>
+        <footer id="pie">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Acerca de</h3>
+                            <p>El Rincon Del HASH,  ofrecemos recursos educativos de calidad para estudiantes de todas las edades. Nuestro objetivo es hacer que el aprendizaje sea accesible y dinámico, brindando lecciones interactivas.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Enlaces útiles</h3>
+                            <ul>
+                                <li><a href="#">Política de privacidad</a></li>
+                                <li><a href="#">Términos de servicio</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Síguenos</h3>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Kevin Ariam Muñiz Leyva. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

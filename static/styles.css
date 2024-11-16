@@ -1,0 +1,472 @@
+@font-face {
+    font-family: 'psone';
+    src: url('fuentes/psone.ttf') format('truetype');
+}
+/* Personalización del tema oscuro */
+body {
+    background-color: #1c1c1c; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    font-family: "psone", sans-serif; /* Fuente estilo PlayStation */
+}
+
+header {
+    background-color: #001f3f; /* Azul oscuro */
+    padding: 20px;
+    border-bottom: 2px solid #0074D9; /* Borde azul claro */
+}
+
+header h1 {
+    color: #7FDBFF; /* Título en azul claro */
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    background-color: #0074D9; /* Azul claro */
+    padding: 10px 20px;
+    border: 2px solid #001f3f; /* Borde azul oscuro */
+    color: #fff; /* Texto blanco */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav ul li a {
+    color: #fff; /* Mantiene el color blanco en los enlaces */
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #7FDBFF; /* Azul más claro al pasar el mouse */
+}
+
+nav ul li:hover a {
+    color: #001f3f; /* Cambia a azul oscuro al pasar el mouse */
+}
+
+main {
+    padding: 20px;
+    background-color: #001f3f; /* Fondo azul oscuro */
+    border: 2px solid #0074D9; /* Borde azul claro */
+    color: #fff; /* Texto blanco */
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+main h2 {
+    color: #7FDBFF; /* Títulos en azul claro */
+    text-align: center;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #fff; /* Texto en blanco */
+}
+
+h3 {
+    color: #7FDBFF; /* Títulos secundarios en azul claro */
+}
+
+/* Estilos retro estilo PS1 para formularios */
+
+/* Estilo para etiquetas (label) */
+label {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 1.2em;
+    color: #7FDBFF; /* Azul claro */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el campo de texto (input type="text") */
+input[type="text"] {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 1.2em;
+    color: #fff; /* Texto blanco */
+    background-color: #001f3f; /* Fondo azul oscuro */
+    border: 3px solid #0074D9; /* Borde azul claro grueso */
+    padding: 10px;
+    width: 100%; /* Ancho completo */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #7FDBFF; /* Cambia a un azul más claro al enfocarse */
+    outline: none; /* Quita el borde por defecto */
+}
+
+/* Estilo para el select */
+select {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #001f3f;
+    border: 3px solid #0074D9;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #7FDBFF;
+    outline: none;
+}
+
+/* Estilo para las opciones del select */
+option {
+    background-color: #001f3f;
+    color: #fff;
+    font-family: "Press Start 2P", sans-serif;
+}
+
+/* Opcional: Agregar efecto hover al input y select */
+input[type="text"]:hover, select:hover {
+    border-color: #7FDBFF; /* Azul más claro al pasar el mouse */
+}
+/* Estilo retro estilo PS1 para el botón */
+button {
+    font-family: "Press Start 2P", sans-serif; /* Fuente estilo PlayStation */
+    font-size: 1.2em;
+    color: #fff; /* Texto blanco */
+    background-color: #0074D9; /* Fondo azul claro */
+    border: 3px solid #001f3f; /* Borde azul oscuro grueso */
+    padding: 15px 30px; /* Tamaño del botón */
+    cursor: pointer;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+button:hover {
+    background-color: #7FDBFF; /* Azul más claro al pasar el mouse */
+    border-color: #7FDBFF; /* Cambia el borde al azul claro */
+}
+
+button:active {
+    background-color: #001f3f; /* Fondo azul oscuro al hacer clic */
+    border-color: #0074D9; /* Cambia el borde al azul claro original */
+}
+
+button:focus {
+    outline: none; /* Quita el borde de enfoque */
+}
+#Descargar {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #0074D9;
+    border: 3px solid #001f3f;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: block; /* Para que el botón ocupe todo el ancho posible */
+    margin: 0 auto; /* Centrando horizontalmente */
+}
+
+#Descargar:hover {
+    background-color: #7FDBFF;
+    border-color: #7FDBFF;
+}
+
+#Descargar:active {
+    background-color: #001f3f;
+    border-color: #0074D9;
+}
+
+#Descargar:focus {
+    outline: none;
+}
+#pie {
+    background-color: #001f3f; /* Fondo azul oscuro */
+    color: #7FDBFF; /* Texto en azul claro */
+    font-size: 0.7em; /* Tamaño de fuente más pequeño */
+    text-align: left; /* Alinea el contenido a la izquierda */
+    padding: 10px 20px; /* Espacio alrededor del contenido */
+    margin-top: 20px; /* Espacio superior antes del footer */
+    border-top: 2px solid #0074D9; /* Borde superior azul claro */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente fila */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+#pie p, #pie ul {
+    flex: 1 1 50%; /* Cada elemento ocupa el 50% de la fila */
+    margin: 5px 0; /* Espacio reducido entre los elementos */
+}
+
+#pie a {
+    color: #7FDBFF; /* Enlaces en azul claro */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+}
+
+#pie a:hover {
+    color: #fff; /* Cambia a blanco al pasar el mouse */
+}
+
+#pie ul {
+    list-style: none; /* Quita los puntos de las listas */
+    padding: 0;
+    margin: 0; /* Sin margen en las listas */
+}
+
+#pie ul li {
+    display: inline; /* Los elementos de la lista en una línea */
+    margin-right: 10px; /* Espacio entre los elementos de la lista */
+}
+
+#pie ul li:last-child {
+    margin-right: 0; /* Sin margen en el último elemento */
+}
+.social-icons {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinea los iconos en una fila */
+    justify-content: flex-start; /* Alinea los iconos a la izquierda */
+}
+
+.social-icons li {
+    margin-right: 15px; /* Espacio entre los íconos */
+}
+
+.social-icons li a {
+    color: #7FDBFF; /* Color de los íconos */
+    font-size: 1.5em; /* Tamaño de los íconos */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.social-icons li a:hover {
+    color: #fff; /* Cambia el color al pasar el mouse */
+}
+
+#imagen1{
+    text-align: center;
+    width: 70%;
+    height: 10%;
+}
+#imagen2{
+    text-align: center;
+    width: 70%;
+    height: 10%;
+}
+img {
+    display: block;      /* Esto elimina el comportamiento inline predeterminado */
+    margin-left: auto;   /* Margen izquierdo automático */
+    margin-right: auto;  /* Margen derecho automático */
+}
+#hash2 {
+    width: 50%;
+    height: auto;
+}
+#block {
+    width: 50%;
+    height: auto;
+}
+#primero{
+    font-family: 'psone', sans-serif;
+    font-size: 105%;
+}
+#segundo{
+    font-family: 'psone', sans-serif;
+    font-size: 120%;
+}
+#tercero{
+    font-family: 'psone', sans-serif;
+    font-size: 120%;
+}
+#cuartote{
+    font-family: 'psone', sans-serif;
+    font-size: 120%;
+}
+#quinto{
+    font-family: 'psone', sans-serif;
+    font-size: 120%;
+}
+#Primero1{
+    font-size: 120%;
+}
+#Segundo2{
+    font-size: 120%;
+}
+#Tercero3{
+    font-size: 120%;
+}
+#Cuarto4{
+    font-size: 120%;
+}
+#Quinto5{
+    font-size: 105%;
+}
+#Sexto6{
+    font-size: 120%;
+}
+#Septimo7{
+    font-size: 120%;
+}
+#Octavo8{
+    font-size: 120%;
+}
+#Noveno9{
+    font-size: 120%;
+}
+#Diez10{
+    font-size: 120%;
+}
+#ol1{
+    font-size: 70%;
+}
+#ol2{
+    font-size: 65%;
+}
+
+/* Estilo para la tabla estilo PS1 */
+table {
+    font-family: "Press Start 2P", sans-serif; /* Fuente estilo PlayStation */
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Elimina los espacios entre las celdas */
+    margin: 20px auto; /* Centrado horizontal */
+    background-color: #001f3f; /* Fondo azul oscuro */
+    border: 3px solid #0074D9; /* Borde azul claro */
+}
+
+th, td {
+    font-size: 1.2em; /* Tamaño de fuente */
+    color: #7FDBFF; /* Texto en azul claro */
+    border: 2px solid #0074D9; /* Bordes de las celdas en azul claro */
+    padding: 15px; /* Espaciado dentro de las celdas */
+    text-align: center; /* Centra el texto */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para efectos de hover */
+}
+
+th {
+    background-color: #0074D9; /* Fondo azul claro en los encabezados */
+    color: #001f3f; /* Texto en azul oscuro */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+td {
+    background-color: #001f3f; /* Fondo azul oscuro en las celdas */
+}
+
+/* Efecto hover para las celdas */
+td:hover {
+    background-color: #7FDBFF; /* Fondo azul claro al pasar el mouse */
+    color: #001f3f; /* Texto azul oscuro al pasar el mouse */
+}
+
+/* Alternar colores de filas */
+tr:nth-child(even) td {
+    background-color: #0074D9; /* Filas pares con azul claro */
+}
+
+tr:nth-child(odd) td {
+    background-color: #001f3f; /* Filas impares con azul oscuro */
+}
+
+/* Efecto para cuando la fila está activa */
+tr:hover td {
+    background-color: #7FDBFF; /* Cambia a azul más claro al pasar el mouse */
+    color: #001f3f; /* Texto azul oscuro en toda la fila */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 0.9em; /* Reduce el tamaño de la fuente */
+        padding: 10px; /* Reduce el espaciado dentro de las celdas */
+    }
+}
+
+/* Estilos generales para móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9em; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reduce el tamaño del título principal */
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca los elementos de navegación en columna */
+        align-items: center; /* Centra los elementos de navegación */
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espacio entre los elementos de navegación */
+        width: 80%; /* Aumenta el ancho de los botones de navegación */
+        text-align: center; /* Alinea el texto de los botones de navegación al centro */
+    }
+
+    main {
+        padding: 10px;
+        max-width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible */
+        margin: 10px auto; /* Reduce el margen superior e inferior */
+        border: 1px solid #0074D9; /* Reduce el grosor del borde */
+    }
+
+    main h2 {
+        font-size: 1.2em; /* Reduce el tamaño de los títulos */
+    }
+
+    input[type="text"], select {
+        font-size: 1em; /* Reduce el tamaño de los campos de formulario */
+    }
+
+    button {
+        font-size: 1em; /* Ajusta el tamaño de los botones */
+        padding: 10px 20px; /* Reduce el padding de los botones */
+    }
+
+    #Descargar {
+        width: 100%; /* Aumenta el tamaño del botón de descarga para ocupar todo el ancho */
+    }
+
+    /* Ajuste de imagenes */
+    #imagen1, #imagen2 {
+        width: 90%; /* Ajusta el ancho de las imágenes al 90% */
+        height: auto; /* Mantiene la proporción original de la imagen */
+    }
+
+    img {
+        max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    #pie {
+        flex-direction: column; /* Alinea los elementos del pie de página en columna */
+        text-align: center; /* Centra el contenido del pie de página */
+    }
+
+    #pie p, #pie ul {
+        flex: 1 1 100%; /* Los elementos del pie de página ocupan el 100% */
+        margin: 5px 0;
+    }
+
+    .social-icons {
+        justify-content: center; /* Centra los iconos de redes sociales */
+    }
+
+    .social-icons li {
+        margin-right: 10px; /* Reduce el espacio entre los íconos */
+    }
+
+    footer {
+        padding: 10px 0; /* Ajusta el padding en el pie de página */
+    }
+}
