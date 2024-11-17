@@ -1,6 +1,8 @@
 ## El Rincón del Hash
 
-El Rincón del Hash es una aplicación web educativa que ayuda a los estudiantes a entender cómo funcionan los hashes (como MD5, SHA-1 y SHA-256). Los usuarios pueden convertir texto, archivos o imágenes en hashes y aprender sobre el proceso detrás de su generación.
+El Rincón del Hash es una aplicación web educativa que ayuda a los estudiantes a entender cómo funcionan los hashes (como MD5, SHA-1 y SHA-256). Los usuarios pueden convertir texto, archivos o imágenes en hashes y aprender sobre el proceso detrás de su generación. 
+
+//Te falta otro hash incluye el que falta 
 
 ## Tecnologías usadas
 
@@ -14,7 +16,7 @@ El Rincón del Hash es una aplicación web educativa que ayuda a los estudiantes
   - *Flask*: Framework para manejar las solicitudes y responder con los datos.
 
 - *Base de datos*:
-  - *MongoDB*: Para almacenar los hashes generados.
+  - *MongoDB*: Para almacenar los hashes generados. // esta mal estamos usando formato csv
 
 ## Funciones principales
 
@@ -28,5 +30,5 @@ El Rincón del Hash es una aplicación web educativa que ayuda a los estudiantes
 ### Requisitos
 
 - *Python *  
-- *MongoDB*  
+- *MongoDB*  // esta mal, se esta ocupando archivos csv
 - *Node.js* (si deseas modificar el frontend o instalar dependencias de JavaScript)
