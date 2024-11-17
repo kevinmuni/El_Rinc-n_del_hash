@@ -3,8 +3,8 @@
 ** REQUERIMIENTOS 
 
  1# LOGO PARA LA PAGINA PRINCIPAL 
- 2# CREAR UN CSV como base 
- 3# Eliminar en option las opciones que no cuentan con algoritomo de hash
+ 2# CREAR UN CSV como base X
+ 3# Eliminar en option las opciones que no cuentan con algoritomo de hash X
 
 ** Kevin 
 1# Crear Readme a base de lo que es el proyecto
