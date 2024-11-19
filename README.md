@@ -41,3 +41,11 @@ El proyecto utiliza estas tecnologías:
 ### Requisitos
 
 - Tener **Python 3.x** instalado.
+
+![Texto alternativo](img/captura1.png)
+
+
+![Texto alternativo](img/captura2.png)
+
+
+![Texto alternativo](img/captura3.png)

@@ -9,6 +9,4 @@
 1# Crear Readme a base de lo que es el proyecto
 
 ** Axel Termina los primeros sprint 
-1# Agregar 60 datos al archivo csv
-2# Agregar en readme visualizaciones de la pagina
 3# Agregar un archivo html index7 glosario de palabras 
