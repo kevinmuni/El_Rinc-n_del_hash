@@ -1,12 +1,10 @@
 
 
-** REQUERIMIENTOS 
-
- 1# LOGO PARA LA PAGINA PRINCIPAL 
+** REQUERIMIENTOS  
  4# CAMBIAR EL ICONO DEL MUNDO DE LA PESTAÑA POR EL LOGO PNG
 
 ** Kevin 
 1# Crear Readme a base de lo que es el proyecto
 
-** Axel Termina los primeros sprint 
+** Axel
 3# Agregar un archivo html index7 glosario de palabras 
