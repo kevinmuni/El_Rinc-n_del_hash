@@ -1,0 +1,24 @@
+
+primeros sprint 
+
+
+en el readme hay un Tener python que esta mal eliminar 
+
+otro falta el framework de psOne que se esta ocupando 
+
+agregar en Front End el nombre del framwork 
+
+el logo esta bien pero si pudira ser en letras blancas estaria mejor en dado 
+caso de que no se peuda en azul cielo 
+
+ocuapando este rgb en el color del logo #7FDBFF
+
+centrar el boton de la calculadora 
+
+ahora cada logo como el del apartado de origen tiene que tener la misma tematica 
+del de inicio que dice el ricon del hash 
+
+
+AHORA ESTO ES A FUTURO PERO 
+EN EL APRTADO DE DESCARGA HACER OTRO HTML QUE HABLE MAS DE COMO SE DESCARGA EL ARCHIVO 
+Y QUE CONTIENE 

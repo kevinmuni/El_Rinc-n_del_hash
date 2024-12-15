@@ -1,6 +1,0 @@
-como subir el repositorio a git 
-
-git pull origin master
-git add .
-git commit -m "(ejemplo de commit)"
-git push origin master
