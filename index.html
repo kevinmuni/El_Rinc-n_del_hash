@@ -106,20 +106,23 @@
     <main id="calculadora">
         <div>
             <h2>Calculadora</h2>
-            <p>En esta sección podrás calcular cualquier cadena de texto y transformarla en una cadena <a href="" style="color: yellow;" title="Presioname">hash</a>.</p>
-            <label for="hashType">Tipo de Hash</label>
-            <select id="hashType" name="hashType">
-                <option value="md5">MD5</option>
-                <option value="sha1">SHA-1</option>
-                <option value="sha256">SHA-256</option>
-                <option value="sha512">SHA-512</option>
-            </select>
-            <br>
-            <label for="campo">Cadena:</label>
-            <input type="text" id="campo">
-            <br>
-            <button id="boton" onclick="trans()">Convertir</button>
-            <br><br>
+<p>En esta sección podrás calcular cualquier cadena de texto y transformarla en una cadena <a href="" style="color: yellow;" title="Presioname">hash</a>.</p>
+<label for="hashType">Tipo de Hash</label>
+<select id="hashType" name="hashType">
+    <option value="md5">MD5</option>
+    <option value="sha1">SHA-1</option>
+    <option value="sha256">SHA-256</option>
+    <option value="sha512">SHA-512</option>
+</select>
+<br>
+<label for="campo">Cadena:</label>
+<input type="text" id="campo">
+<br>
+<div style="text-align: center;">
+    <button id="boton" onclick="trans()">Convertir</button>
+</div>
+<br><br>
+
             
             <!-- Spans con estilo PS1 para mostrar resultados -->
             <div>
@@ -132,16 +135,19 @@
         </div>
     </main>
     
-    <main id="base-datos">
+    <main id="base-datos" style="text-align: center; padding: 20px;">
         <div>
             <h2>Descarga nuestra Base de Datos</h2>
-            <p style="text-align: center;">En Este apartado Podras Descargar un .txt Con nuestra Base de Datos de Hash</p>
+            <p>En este apartado podrás descargar un archivo <code>.csv</code> con nuestra base de datos de hashes.</p>
             <br>
             <a href="img_webp/nombres_hash_60.csv" download>
-                <button>Descargar</button>
+                <button style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                    Descargar
+                </button>
             </a>
         </div>
     </main>
+    
     <main>
         <footer id="pie">
             <div class="footer">
