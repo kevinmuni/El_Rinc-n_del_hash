@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'psone';
-    src: url('fuentes/psone.ttf') format('truetype');
+    src: url('psone.ttf') format('truetype');
 }
 /* Personalización del tema oscuro */
 body {
@@ -159,7 +159,7 @@ button:active {
 button:focus {
     outline: none; /* Quita el borde de enfoque */
 }
-#Descargar {
+#Descargar1 {
     font-family: "Press Start 2P", sans-serif;
     font-size: 1.2em;
     color: #fff;

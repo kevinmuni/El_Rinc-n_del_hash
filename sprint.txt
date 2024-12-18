@@ -5,14 +5,14 @@ en el readme hay un Tener python que esta mal eliminar // terminado
 
 otro falta el framework de psOne que se esta ocupando 
 
-agregar en Front End el nombre del framwork //AXEL
+agregar en Front End el nombre del framwork //AXEL ##TERMINADO##
 
 el logo esta bien pero si pudira ser en letras blancas estaria mejor en dado 
 caso de que no se peuda en azul cielo  //Axel (porque yo tengo las imagenes en mi cel)
 
 ocuapando este rgb en el color del logo #7FDBFF //Axel
 
-centrar el boton de la calculadora // Kevin esto haras
+centrar el boton de la calculadora // Kevin esto haras ##TERMINADO##
 
 ahora cada logo como el del apartado de origen tiene que tener la misma tematica 
 del de inicio que dice el ricon del hash //Axel (porque son las imagenes del logo y yo las tengo)
@@ -20,4 +20,4 @@ del de inicio que dice el ricon del hash //Axel (porque son las imagenes del log
 
 AHORA ESTO ES A FUTURO PERO 
 EN EL APRTADO DE DESCARGA HACER OTRO HTML QUE HABLE MAS DE COMO SE DESCARGA EL ARCHIVO 
-Y QUE CONTIENE  // Kevin hasta donde puedas 
+Y QUE CONTIENE  // Kevin hasta donde puedas  ##TERMINADO##
