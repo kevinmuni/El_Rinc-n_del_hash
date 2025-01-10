@@ -12,9 +12,7 @@
 <body>
     <header>
     <div>
-        <h1>
-            <u>Base De Datos</u>
-        </h1>
+        <img src="img_webp/index9base.webp" alt="">
     </div>
     <nav>
         <div>
@@ -30,20 +28,33 @@
 </header>
 <main id="uno">
     <div id="Uno">
-        <h1>Información sobre la Base de Datos</h1>
-        <p>Esta Base de Datos llamado <a href="" style="color: yellow;" title="Presioname">nombres_hash_60</a> contiene nombres con varios tipos de hash</p>
+        <h1 id="colortitulo"><u>Descripcion sobre la Base de Datos</u></h1>
+        <p>La Base de Datos llamada <a href="" style="color: yellow;" title="Presioname">hashes_output.zip</a> es un extenso listado que contiene 14 millones de nombres, cada uno asociado a varios hashes criptográficos. Para cada nombre, el archivo incluye:</p>
+        <ol>
+            <li>MD5 Hash: Un resumen criptográfico de 128 bits que es comúnmente usado para verificar la integridad de datos. Aunque es rápido, no es adecuado para aplicaciones de alta seguridad debido a su vulnerabilidad a colisiones.</li>
+            <li>SHA-1 Hash: Un algoritmo de hash de 160 bits que fue ampliamente utilizado para asegurar datos y autenticar mensajes, pero que ha sido superado por técnicas más seguras debido a debilidades criptográficas descubiertas en los últimos años.</li>
+            <li>SHA-256 Hash: Parte de la familia SHA-2, produce un resumen de 256 bits. Es ampliamente usado para asegurar información debido a su equilibrio entre seguridad y rendimiento.</li>
+            <li>SHA-512 Hash: También parte de la familia SHA-2, genera un resumen más largo de 512 bits, ofreciendo un nivel de seguridad más alto, aunque con mayores requisitos de procesamiento.</li>
+        </ol>
     </div>
     <br>
 </main>
 <main id="dos">
     <div id="Dos">
-        <h1>¿Qué contiene la Base de Datos?</h1>
-        <p>La Base de datos contiene Nombres y sus correspondientes hash's generados con algoritmos como MD5, SHA-512, SHA-1 y SHA-256.</p>
+        <h1 id="colortitulo"><u>¿Porque Un Csv?</u></h1>
+        <p>El archivo "hash_output" fue creado en formato CSV (Comma-Separated Values) por varias razones clave:</p>
+        <ol>
+            <li>Simplicidad y Compatibilidad: El formato CSV es sencillo y ampliamente compatible con diversas herramientas de análisis de datos, hojas de cálculo, bases de datos y lenguajes de programación. Esto facilita la importación y exportación de los datos sin necesidad de conversiones complejas.</li>
+            <li>Estructura Tabular: Los datos están organizados en una estructura tabular, donde cada fila representa un registro (un nombre con sus hashes correspondientes) y cada columna representa un tipo de hash. Esta organización facilita la manipulación, búsqueda, y análisis de los datos.</li>
+            <li>Legibilidad y Facilidad de Uso: El formato CSV es fácil de leer tanto por humanos como por máquinas. Esto permite una rápida verificación visual de los datos y simplifica el procesamiento automatizado.</li>
+            <li>Eficiencia en el Almacenamiento: Los archivos CSV suelen tener un tamaño más reducido en comparación con otros formatos como JSON o XML, lo que es importante al manejar grandes volúmenes de datos, como los 14 millones de registros en este caso.</li>
+            <li>Flexibilidad: CSV permite una fácil integración con sistemas existentes y es adecuado para grandes volúmenes de datos, facilitando tanto el almacenamiento como el procesamiento eficiente de los mismos.</li>
+        </ol>
     </div>
 </main>
 <main id="tres">
     <div id="Tres">
-        <h1>Estructura de la Base de Datos</h1>
+        <h1 id="colortitulo"><u>Estructura de la Base de Datos</u></h1>
         <p>La información está organizada en formato tabular, ideal para ser utilizada en pruebas o aprendizaje sobre funciones hash.</p>
         <br>
         <ol>
