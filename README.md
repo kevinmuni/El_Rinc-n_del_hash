@@ -31,7 +31,7 @@ El proyecto utiliza estas tecnologías:
   - **JavaScript** (CryptoJS): Para generar los hashes.
 
 - **Backend** (servidor):
-  - **Python** y **Flask**: Para manejar las operaciones y la lógica.
+  - **Flask**: Para manejar las operaciones y la lógica.
 
 - **Almacenamiento**:
   - **CSV**: Para guardar los hashes generados junto con sus detalles.
