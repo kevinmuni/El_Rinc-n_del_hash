@@ -30,9 +30,6 @@ El proyecto utiliza estas tecnologías:
   - **HTML y CSS**: Para el diseño de la página.
   - **JavaScript** (CryptoJS): Para generar los hashes.
 
-- **Backend** (servidor):
-  - **Flask**: Para manejar las operaciones y la lógica.
-
 - **Almacenamiento**:
   - **CSV**: Para guardar los hashes generados junto con sus detalles.
 
